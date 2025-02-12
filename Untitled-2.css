@@ -56,7 +56,7 @@ body {
 #slider h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color:white;
+    color: white;
 }
 
 .slider-container {
@@ -71,24 +71,28 @@ body {
     object-fit: cover;
     border-radius: 20px;
 }
+
 /* Chi siamo */
-#about img{
-	width: 250px;
-    height: 250x;
+#about img {
+    width: 250px;
+    height: 250px;
     margin-left: 825px;
 }
-#about p{
-	font-size: 18px;
-	margin-top: 20px;
-	color: #555;
-	text-align: center;
+
+#about p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #555;
+    text-align: center;
 }
-#about h2{
-	font-size: 24px;
-	margin-top: 20px;
-	margin-bottom:20px;
-	text-align: center;
+
+#about h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
+
 /* Il nostro staff */
 #staff {
     background-color: #ffffff;
@@ -98,21 +102,23 @@ body {
 
 #staff h2 {
     font-size: 24px;
-    margin-top:20px;
-	margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #staff p {
     font-size: 18px;
     margin-top: 20px;
-	color: #555;
+    color: #555;
 }
-#staff img{
-	width: 250px;
+
+#staff img {
+    width: 250px;
     height: 150px;
     object-fit: cover;
     border-radius: 20px;
 }
+
 /* Storie di Adozione */
 #adoption-stories {
     background-color: #f9f9f9;
@@ -206,15 +212,14 @@ form button:hover {
 /* Posizione Flexbox per le immagini */
 .posizione {
     display: flex;
-    justify-content: space-between; /* Posiziona le due immagini ai margini opposti */
-    align-items: center; /* Allinea le immagini verticalmente al centro */
-    flex-wrap: wrap; /* Consente che gli elementi si adattino su schermi piccoli */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Immagine a sinistra */
 .image-left {
-    
-    text-align: center; /* Allinea il contenuto a sinistra */
+    text-align: center;
     font-size: 18px;
     margin-bottom: 30px;
 }
@@ -227,8 +232,7 @@ form button:hover {
 
 /* Immagine a destra */
 .image-right {
-    
-    text-align: center; /* Allinea il contenuto a destra */
+    text-align: center;
     font-size: 18px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -238,4 +242,212 @@ form button:hover {
     width: 300px;
     height: 300px;
     border-radius: 8px;
+}
+
+/* Media Queries per Rendi il Layout Responsivo */
+
+/* Piccoli dispositivi (smaller than 768px, es. smartphone) */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    #slider h2 {
+        font-size: 22px;
+    }
+
+    .slider-container {
+        flex-direction: column;
+    }
+
+    .slider-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    #about img {
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+    }
+
+    #staff img {
+        width: 200px;
+        height: 120px;
+    }
+
+    .story img {
+        width: 120px;
+        height: 80px;
+    }
+
+    form input, form textarea {
+        width: 80%;
+    }
+
+    #posizione {
+        padding: 15px;
+    }
+
+    .image-left img, .image-right img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Dispositivi medi (tra 768px e 1024px, es. tablet) */
+@media (max-width: 1024px) {
+    #slider h2 {
+        font-size: 24px;
+    }
+
+    .slider-container img {
+        width: 90%;
+        height: auto;
+    }
+
+    #about img {
+        width: 220px;
+        height: 220px;
+        margin-left: 0;
+    }
+
+    #staff img {
+        width: 220px;
+        height: 130px;
+    }
+
+    .story img {
+        width: 140px;
+        height: 90px;
+    }
+
+    form input, form textarea {
+        width: 80%;
+    }
+
+    .image-left img, .image-right img {
+        width: 45%;
+        height: auto;
+    }
+}
+
+/* Dispositivi grandi (1024px in su, es. desktop) */
+@media (min-width: 1024px) {
+    #slider h2 {
+        font-size: 28px;
+    }
+
+    .slider-container img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #about img {
+        width: 250px;
+        height: 250px;
+        margin-left: 825px;
+    }
+
+    #staff img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .story img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .image-left img, .image-right img {
+        width: 330px;
+        height: 270px;
+    }
+}
+/* Sezione Posizione */
+#posizione {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Spazio aggiunto per separare */
+}
+
+/* Posizione Flexbox per le immagini */
+.posizione {
+    display: flex;
+    justify-content: space-between; /* Posiziona le due immagini ai margini opposti */
+    align-items: center; /* Allinea le immagini verticalmente al centro */
+    flex-wrap: wrap; /* Consente che gli elementi si adattino su schermi piccoli */
+    gap: 20px; /* Spazio tra le immagini */
+}
+
+/* Immagine a sinistra */
+.image-left {
+    flex: 1; /* Fa in modo che l'immagine prenda la stessa larghezza */
+    text-align: center; /* Allinea il contenuto al centro */
+    font-size: 18px;
+}
+
+.image-left img {
+    width: 100%; /* L'immagine occupa tutta la larghezza disponibile */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-width: 330px; /* Limita la larghezza dell'immagine */
+    border-radius: 8px;
+}
+
+/* Immagine a destra */
+.image-right {
+    flex: 1; /* Fa in modo che l'immagine prenda la stessa larghezza */
+    text-align: center; /* Allinea il contenuto al centro */
+    font-size: 18px;
+}
+
+.image-right img {
+    width: 100%; /* L'immagine occupa tutta la larghezza disponibile */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-width: 330px; /* Limita la larghezza dell'immagine */
+    border-radius: 8px;
+}
+
+/* Media Queries per Rendi il Layout Responsivo */
+
+/* Piccoli dispositivi (smaller than 768px, es. smartphone) */
+@media (max-width: 768px) {
+    .posizione {
+        flex-direction: column; /* Le immagini si dispongono una sopra l'altra */
+        align-items: center; /* Allinea al centro */
+    }
+
+    .image-left img, .image-right img {
+        width: 90%; /* Le immagini occupano la maggior parte della larghezza */
+        max-width: 300px; /* Limita la larghezza delle immagini */
+    }
+}
+
+/* Dispositivi medi (tra 768px e 1024px, es. tablet) */
+@media (max-width: 1024px) {
+    .image-left img, .image-right img {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+
+/* Dispositivi grandi (1024px in su, es. desktop) */
+@media (min-width: 1024px) {
+    .image-left img, .image-right img {
+        width: 100%;
+        max-width: 330px;
+    }
 }
